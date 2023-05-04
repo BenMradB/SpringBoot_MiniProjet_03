@@ -19,7 +19,7 @@
 
 
 	<div class="container mt-5">
-		<div sec:authorize="hasRole('ADMIN')" class="mb-3">
+		<div sec:authorize="hasRole('ADMIN') || hasRole('AGENT')" class="mb-3">
 			<a href="/new">
 				<button type="button" class="btn btn-primary">Create New Teacher</button>
 			</a>

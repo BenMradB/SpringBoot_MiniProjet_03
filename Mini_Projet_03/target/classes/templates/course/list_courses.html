@@ -17,7 +17,7 @@
 	<div th:replace="~{partials/nav-bar}"></div>
 
 	<div class="container mt-5">
-		<div sec:authorize="hasRole('ADMIN')" class="mb-3">
+		<div sec:authorize="hasRole('ADMIN') || hasRole('AGENT')" class="mb-3">
 			<a href="/newCourse">
 				<button type="button" class="btn btn-primary">Create New Course</button>
 			</a>

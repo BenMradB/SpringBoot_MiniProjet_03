@@ -26,7 +26,7 @@
 				<tr>
 					<th scope="col">ID</th>
 					<th scope="col">Speciality Name</th>
-					<th sec:authorize="hasRole('ADMIN')" scope="col" >Update</th>
+					<th sec:authorize="hasRole('ADMIN') || hasRole('AGENT')" scope="col" >Update</th>
 					<th sec:authorize="hasRole('ADMIN')" scope="col" >Delete</th>
 				</tr>
 			</thead>

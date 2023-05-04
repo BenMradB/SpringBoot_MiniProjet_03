@@ -170,7 +170,7 @@ public class TeacherController {
 		}
 
 		teacher.setRole(t.getRole());
-
+		this.paginate(modelMap, page, 2);
 		this.teacherService.createTeacher(teacher);
 
 		return "/teacher/list_teachers";
